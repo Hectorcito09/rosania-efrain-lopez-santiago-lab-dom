@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab DOM</title>
+</head>
+<body>
+  <!-- Parte 1 -->
+  <h1 id="titulo">Mi primera página dinámica</h1>
+  <ul id="lista"></ul>
+
+  <!-- Parte 2 -->
+  <button id="saludar" type="button">Saludar</button>
+
+  <ul id="tareas">
+    <li>
+      <button class="texto" type="button">Tarea de ejemplo</button>
+      <button class="borrar" type="button">×</button>
+    </li>
+  </ul>
+
+  <!-- Parte 3 -->
+  <form id="registro" novalidate>
+    <div>
+      <label for="correo">Correo</label>
+      <input id="correo" name="correo" type="email" required aria-describedby="correo-error">
+      <p id="correo-error" class="error"></p>
+    </div>
+
+    <div>
+      <label for="cedula">Cédula</label>
+      <input id="cedula" name="cedula" required pattern="([1-9]|1[0-3]|PE|E|N)-\d{1,4}-\d{1,6}" placeholder="8-123-4567" aria-describedby="cedula-error">
+      <p id="cedula-error" class="error"></p>
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- defer: el script corre cuando el HTML ya está cargado -->
+  <script src="app.js" defer></script>
+</body>
+</html>
