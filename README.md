@@ -14,7 +14,9 @@
 ## Enlaces
 Repositorio: https://github.com/Hectorcito09/rosania-efrain-lopez-santiago-lab-dom
 
-Github Pages: https://hectorcito09.github.io/rosania-efrain-lopez-santiago-lab-dom/inscripcion/
+Github Pages: 
+- https://hectorcito09.github.io/rosania-efrain-lopez-santiago-lab-dom/inscripcion/
+- https://hectorcito09.github.io/rosania-efrain-lopez-santiago-lab-dom/lab-dom/
 
 ## Objetivos
 
