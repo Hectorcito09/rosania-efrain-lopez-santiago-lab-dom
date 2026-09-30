@@ -77,10 +77,10 @@ Los momentos de validación son tres:
 
 ## Capturas del formulario
 
-###Llenado del Formulario
+### Llenado del Formulario
 <img width="349" height="649" alt="image" src="https://github.com/user-attachments/assets/6a8b3730-81c8-4c0d-b257-b3d757b673a6" />
 
-###Resultado de la Inscripción Exitosa
+### Resultado de la Inscripción Exitosa
 <img width="925" height="519" alt="image" src="https://github.com/user-attachments/assets/56e5c9f2-b718-47fa-a652-c73062f29dbc" />
 
 ## Preguntas de control
