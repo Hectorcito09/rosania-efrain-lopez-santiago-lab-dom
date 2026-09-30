@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscripción a Cursos - FISC UTP</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <main class="contenedor-principal">
+    <header class="encabezado-pagina">
+      <h1>Inscripción a Cursos</h1>
+      <p>Facultad de Ingeniería de Sistemas Computacionales — UTP</p>
+    </header>
+
+    <form id="inscripcion" class="formulario-inscripcion" novalidate>
+      <!-- Nombre Completo -->
+      <div class="campo-formulario">
+        <label for="nombre">Nombre completo *</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre y apellido">
+        <p id="nombre-error" class="mensaje-error"></p>
+      </div>
+
+      <!-- Cédula -->
+      <div class="campo-formulario">
+        <label for="cedula">Cédula *</label>
+        <input type="text" id="cedula" name="cedula" placeholder="Ej. 8-123-4567">
+        <p id="cedula-error" class="mensaje-error"></p>
+      </div>
+
+      <!-- Correo Electrónico -->
+      <div class="campo-formulario">
+        <label for="correo">Correo electrónico *</label>
+        <input type="email" id="correo" name="correo" placeholder="nombre@dominio.com">
+        <p id="correo-error" class="mensaje-error"></p>
+      </div>
+
+      <!-- Celular -->
+      <div class="campo-formulario">
+        <label for="celular">Celular *</label>
+        <input type="tel" id="celular" name="celular" placeholder="Ej. 6123-4567 o 61234567">
+        <p id="celular-error" class="mensaje-error"></p>
+      </div>
+
+      <!-- Fecha de Nacimiento -->
+      <div class="campo-formulario">
+        <label for="fechaNacimiento">Fecha de nacimiento *</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+        <p id="fechaNacimiento-error" class="mensaje-error"></p>
+      </div>
+
+      <!-- Curso -->
+      <div class="campo-formulario">
+        <label for="curso">Curso *</label>
+        <select id="curso" name="curso">
+          <option value="">Selecciona un curso</option>
+          <option value="Ingeniería Web">Ingeniería Web</option>
+          <option value="Ingeniería Ambiental">Ingeniería Ambiental</option>
+          <option value="Lenguajes Formales">Lenguajes Formales</option>
+          <option value="Mantenimiento y Pruebas de Software">Mantenimiento y Pruebas de Software</option>
+        </select>
+        <p id="curso-error" class="mensaje-error"></p>
+      </div>
+
+      <!-- Modalidad -->
+      <fieldset class="grupo-opciones">
+        <legend>Modalidad *</legend>
+        <div class="opciones-horizontales">
+          <label><input type="radio" name="modalidad" value="presencial"> Presencial</label>
+          <label><input type="radio" name="modalidad" value="virtual"> Virtual</label>
+        </div>
+        <p id="modalidad-error" class="mensaje-error"></p>
+      </fieldset>
+
+      <!-- Sede (Se muestra u oculta dependiendo de la modalidad) -->
+      <div class="campo-formulario oculto" id="campo-sede">
+        <label for="sede">Sede *</label>
+        <select id="sede" name="sede">
+          <option value="">Selecciona una sede</option>
+          <option value="Campus Víctor Levi Sasso (Panamá)">Campus Víctor Levi Sasso (Panamá)</option>
+          <option value="Centro Regional de Azuero">Centro Regional de Azuero</option>
+          <option value="Centro Regional de Chiriquí">Centro Regional de Chiriquí</option>
+          <option value="Centro Regional de Veraguas">Centro Regional de Veraguas</option>
+        </select>
+        <p id="sede-error" class="mensaje-error"></p>
+      </div>
+
+      <!-- Contraseñas -->
+      <div class="cuadrícula-formulario">
+        <div class="campo-formulario">
+          <label for="clave">Contraseña *</label>
+          <input type="password" id="clave" name="clave">
+          <div class="contenedor-medidor-fuerza"><i id="meter-bar"></i></div>
+          <span class="etiqueta-medidor-fuerza" id="meter-lbl">Fuerza: —</span>
+          <p id="clave-error" class="mensaje-error"></p>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="clave2">Confirmar contraseña *</label>
+          <input type="password" id="clave2" name="clave2">
+          <p id="clave2-error" class="mensaje-error"></p>
+        </div>
+      </div>
+
+      <!-- Comentarios -->
+      <div class="campo-formulario">
+        <div class="encabezado-etiqueta-contador">
+          <label for="comentarios">Comentarios (Opcional)</label>
+          <span id="char-counter" class="contador-caracteres">0/200</span>
+        </div>
+        <textarea id="comentarios" name="comentarios" rows="3" maxlength="200"></textarea>
+        <p id="comentarios-error" class="mensaje-error"></p>
+      </div>
+
+      <!-- Términos -->
+      <div class="campo-formulario casilla-verificacion-campo">
+        <label>
+          <input type="checkbox" id="terminos" name="terminos" value="aceptado">
+          Acepto los términos y condiciones de inscripción *
+        </label>
+        <p id="terminos-error" class="mensaje-error"></p>
+      </div>
+
+      <button type="submit" class="boton-enviar">Inscribirme</button>
+    </form>
+
+    <!-- Tarjeta de Confirmación con los Datos Ingresados -->
+    <section id="confirmacion"></section>
+  </main>
+
+  <script src="validacion.js" defer></script>
+</body>
+</html>
