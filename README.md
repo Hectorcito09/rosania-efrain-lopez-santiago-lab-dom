@@ -11,6 +11,10 @@
 - Facultad: Facultad de Ingeniería de Sistemas Computacionales
 - Fecha: 29 de septiembre de 2026
 
+##Enlaces
+Repositorio: https://github.com/Hectorcito09/rosania-efrain-lopez-santiago-lab-dom
+Github Pages: https://hectorcito09.github.io/rosania-efrain-lopez-santiago-lab-dom/inscripcion/
+
 ## Objetivos
 
 - **DOM:** Comprender el documento como un árbol de nodos que el JavaScript puede consultar y modificar en tiempo de ejecución, usando `querySelector` para localizar elementos por selector CSS y propiedades del DOM como `textContent`, `classList` y `value` para cambiar su contenido, sus clases y sus valores.
